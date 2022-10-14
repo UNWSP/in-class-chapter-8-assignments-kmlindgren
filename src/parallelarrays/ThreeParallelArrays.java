@@ -32,7 +32,10 @@ public class ThreeParallelArrays {
 			}
 			if(index != -1) {
 				System.out.println("State abbreviation: " + abbrev + "\nState capital: " + capital);
-				
+				System.out.print("Enter the zip code for this area: ");
+				zip = inputDevice.next();
+				String capzip = capital + " - " + zip;
+				Array.set(capitals, index, capzip);
 			}
 			else {
 				System.out.print("Invalid input.");
